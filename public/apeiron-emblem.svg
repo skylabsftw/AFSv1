@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Left Deep Lavender Lighting -->
+    <linearGradient id="purpleGlow" x1="0%" y1="50%" x2="50%" y2="50%">
+      <stop offset="0%" stopColor="#7022FC" stopOpacity="0.9" />
+      <stop offset="100%" stopColor="#7022FC" stopOpacity="0" />
+    </linearGradient>
+    
+    <!-- Right Sunrise Orange Lighting -->
+    <linearGradient id="orangeGlow" x1="100%" y1="50%" x2="50%" y2="50%">
+      <stop offset="0%" stopColor="#FDBF32" stopOpacity="0.9" />
+      <stop offset="100%" stopColor="#FDBF32" stopOpacity="0" />
+    </linearGradient>
+
+    <!-- Metallic Silver Gradients -->
+    <linearGradient id="metallicLight" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="30%" stopColor="#E2E8F0" />
+      <stop offset="65%" stopColor="#94A3B8" />
+      <stop offset="100%" stopColor="#475569" />
+    </linearGradient>
+
+    <linearGradient id="metallicLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="35%" stopColor="#CBD5E1" />
+      <stop offset="70%" stopColor="#64748B" />
+      <stop offset="100%" stopColor="#1E293B" />
+    </linearGradient>
+
+    <linearGradient id="metallicRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="35%" stopColor="#E2E8F0" />
+      <stop offset="70%" stopColor="#64748B" />
+      <stop offset="100%" stopColor="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="purpleRim" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stopColor="#9C52FD" />
+      <stop offset="50%" stopColor="#7022FC" />
+      <stop offset="100%" stopColor="#4A148C" />
+    </linearGradient>
+
+    <linearGradient id="orangeRim" x1="100%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stopColor="#FFE082" />
+      <stop offset="50%" stopColor="#FDBF32" />
+      <stop offset="100%" stopColor="#E65100" />
+    </linearGradient>
+
+    <!-- Ambient Shadow Filter -->
+    <filter id="shieldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Halo Behind Shield -->
+  <circle cx="28" cy="50" r="28" fill="#7022FC" opacity="0.3" filter="url(#shieldGlow)" />
+  <circle cx="72" cy="50" r="28" fill="#FDBF32" opacity="0.25" filter="url(#shieldGlow)" />
+
+  <!-- Outer Geometric Shield Boundary -->
+  <!-- Outer Shield Left Facet with Purple Rim -->
+  <polygon
+    points="50,6 18,22 18,58 50,94 50,86 24,54 24,26 50,14"
+    fill="url(#purpleRim)"
+    opacity="0.95"
+  />
+
+  <!-- Outer Shield Right Facet with Orange Rim -->
+  <polygon
+    points="50,6 82,22 82,58 50,94 50,86 76,54 76,26 50,14"
+    fill="url(#orangeRim)"
+    opacity="0.95"
+  />
+
+  <!-- Inner Dark Void Foundation -->
+  <polygon
+    points="50,14 24,26 24,54 50,86 76,54 76,26"
+    fill="#040408"
+  />
+
+  <!-- The Angular 'A' Central Monolith (Metallic Silver Body) -->
+  <!-- Left Wing of 'A' -->
+  <polygon
+    points="50,18 42,24 28,68 37,70 44,46 50,46"
+    fill="url(#metallicLeft)"
+  />
+  <!-- Right Wing of 'A' -->
+  <polygon
+    points="50,18 58,24 72,68 63,70 56,46 50,46"
+    fill="url(#metallicRight)"
+  />
+
+  <!-- Angular 'A' Center Apex Ridge (Bright Specular White Highlight) -->
+  <polygon
+    points="50,18 48,22 48,46 52,46 52,22"
+    fill="#FFFFFF"
+    opacity="0.95"
+  />
+
+  <!-- Angular 'A' Crossbar (Metallic Silver with Specular Highlight) -->
+  <polygon
+    points="38,54 62,54 60,60 40,60"
+    fill="url(#metallicLight)"
+  />
+  <line x1="39" y1="54" x2="61" y2="54" stroke="#FFFFFF" strokeWidth="1.2" strokeLinecap="round" />
+
+  <!-- Shield Core Diamond / Prism Accent -->
+  <polygon
+    points="50,30 46,38 50,44 54,38"
+    fill="#020204"
+    stroke="#E2E8F0"
+    strokeWidth="0.8"
+  />
+  <line x1="50" y1="30" x2="50" y2="44" stroke="#FFFFFF" strokeWidth="1" />
+
+  <!-- Specular Outer Edge Highlights -->
+  <line x1="50" y1="6" x2="18" y2="22" stroke="#D8B4FE" strokeWidth="1.5" strokeLinecap="round" />
+  <line x1="50" y1="6" x2="82" y2="22" stroke="#FED7AA" strokeWidth="1.5" strokeLinecap="round" />
+  <line x1="18" y1="22" x2="18" y2="58" stroke="#7022FC" strokeWidth="1.2" />
+  <line x1="82" y1="22" x2="82" y2="58" stroke="#FDBF32" strokeWidth="1.2" />
+  <line x1="18" y1="58" x2="50" y2="94" stroke="#7022FC" strokeWidth="1.5" />
+  <line x1="82" y1="58" x2="50" y2="94" stroke="#FDBF32" strokeWidth="1.5" />
+
+  <!-- Bottom Apex Radiant Node -->
+  <circle cx="50" cy="94" r="2" fill="#FFFFFF" />
+  <circle cx="50" cy="6" r="2" fill="#FFFFFF" />
+</svg>

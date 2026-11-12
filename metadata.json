@@ -1,0 +1,7 @@
+{
+  "name": "Apeiron Frontier Security",
+  "description": "Practical cybersecurity services and technology solutions to help organizations protect their infrastructure, safeguard data, and manage security risks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
